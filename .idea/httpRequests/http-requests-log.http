@@ -1,0 +1,54 @@
+GET http://localhost:8080?name=vasa
+Accept: */*
+Cache-Control: no-cache
+
+<> 2018-02-06T025033.200.html
+
+###
+
+GET http://localhost:8080?name=vasa
+Accept: */*
+Cache-Control: no-cache
+
+<> 2018-02-06T024620.200.html
+
+###
+
+GET http://localhost:8080
+Accept: */*
+Cache-Control: no-cache
+
+<> 2018-02-06T024553.200.html
+
+###
+
+GET http://localhost:8080
+Accept: */*
+Cache-Control: no-cache
+
+###
+
+GET http://localhost:8080
+Accept: */*
+Cache-Control: no-cache
+
+###
+
+GET http://localhost:8080
+Accept: */*
+Cache-Control: no-cache
+
+###
+
+GET http://localhost:8080
+Accept: */*
+Cache-Control: no-cache
+
+###
+
+GET http://localhost:8080/resources
+Accept: */*
+Cache-Control: no-cache
+
+###
+
