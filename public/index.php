@@ -8,7 +8,7 @@
 use Framework\Http\Request;
 
 chdir(dirname(__DIR__)); // поднимаемся на уровень вверх
-require 'src/Framework/Http/Request.php';
+require 'vendor/autoload.php';
 
 
 
