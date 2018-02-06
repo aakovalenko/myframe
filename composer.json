@@ -1,5 +1,8 @@
 {
-  "require": {
+  "config": {
     "sort-packages": true
+  },
+  "require": {
+    "roave/security-advisories": "dev-master"
   }
 }
