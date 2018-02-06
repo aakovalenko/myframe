@@ -5,25 +5,18 @@
  * Date: 06.02.18
  * Time: 14:32
  */
+use Framework\Http\Request;
 
-function getLang(array $get, array $cookie, array $session, array $server, $default) {
-    return
-        !empty($get['lang']) ? $get['lang'] :
-            (!empty($cookie['lang']) ? $cookie['lang'] :
-                (!empty($session['lang']) ? $session['lang'] :
-                    (!empty($server['HTTP_ACCEPT_LANGUAGE']) ?substr($server['HTTP_ACCEPT_LANGUAGE'], 0, 2) :
-                    $default
-                    )
-                )
-            );
-}
+chdir(dirname(__DIR__)); // поднимаемся на уровень вверх
+require 'src/Framework/Http/Request.php';
 
-session_start();
 
-$name = $_GET['name'] ?? 'Guest';
-$lang = getLang($_GET,$_COOKIE, $_SESSION, $_SERVER, 'en');
 
+
+$request = new Request();
+
+$name = $request->getQueryParams()['name'] ?? 'Guest';
 
 header('X-Developer: KAA');
 
-echo 'Hello! '.$name.'! Your lang is '.$lang.PHP_EOL;
+echo 'Hello! '.$name.'!'.PHP_EOL;
