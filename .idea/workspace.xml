@@ -1,15 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="d429df9b-88cd-4b03-8ab3-005546359ec2" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/http-requests-log.http" afterPath="$PROJECT_DIR$/.idea/httpRequests/http-requests-log.http" />
-      <change beforePath="$PROJECT_DIR$/.idea/myframe.iml" afterPath="$PROJECT_DIR$/.idea/myframe.iml" />
-      <change beforePath="$PROJECT_DIR$/.idea/php.xml" afterPath="$PROJECT_DIR$/.idea/php.xml" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/public/index.php" afterPath="$PROJECT_DIR$/public/index.php" />
-      <change beforePath="$PROJECT_DIR$/src/Framework/Http/Request.php" afterPath="$PROJECT_DIR$/src/Framework/Http/Request.php" />
-      <change beforePath="$PROJECT_DIR$/tests/Framework/Http/RequestTest.php" afterPath="$PROJECT_DIR$/tests/Framework/Http/RequestTest.php" />
-    </list>
+    <list default="true" id="d429df9b-88cd-4b03-8ab3-005546359ec2" name="Default" comment="" />
     <ignored path="$PROJECT_DIR$/.idea/httpRequests/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -35,11 +27,31 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Response.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Response.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Framework/Http/Response.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="867">
-              <caret line="91" column="20" lean-forward="false" selection-start-line="91" selection-start-column="20" selection-end-line="91" selection-end-column="20" />
+            <state relative-caret-position="504">
+              <caret line="33" column="4" lean-forward="true" selection-start-line="33" selection-start-column="4" selection-end-line="92" selection-end-column="5" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ServerRequestInterface.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Framework/Http/ServerRequestInterface.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="36">
+              <caret line="7" column="0" lean-forward="false" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="25" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ResponseInterface.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/Framework/Http/ResponseInterface.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="252">
+              <caret line="14" column="38" lean-forward="false" selection-start-line="14" selection-start-column="38" selection-end-line="14" selection-end-column="38" />
               <folding />
             </state>
           </provider>
@@ -99,16 +111,6 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="phpunit" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/vendor/bin/phpunit">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="Request.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Framework/Http/Request.php">
           <provider selected="true" editor-type-id="text-editor">
@@ -139,6 +141,8 @@
         <option value="$PROJECT_DIR$/tests/Framework/Http/ResponseTest.php" />
         <option value="$PROJECT_DIR$/public/index.php" />
         <option value="$PROJECT_DIR$/src/Framework/Http/Response.php" />
+        <option value="$PROJECT_DIR$/src/Framework/Http/ServerRequestInterface.php" />
+        <option value="$PROJECT_DIR$/src/Framework/Http/ResponseInterface.php" />
       </list>
     </option>
   </component>
@@ -621,12 +625,12 @@
       <updated>1517919144751</updated>
       <workItem from="1517919146085" duration="9378000" />
       <workItem from="1517987395876" duration="368000" />
-      <workItem from="1517989480273" duration="6835000" />
+      <workItem from="1517989480273" duration="8337000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="16581000" />
+    <option name="totallyTimeSpent" value="18083000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="70" y="98" width="1857" height="1092" extended-state="6" />
@@ -855,10 +859,26 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/Framework/Http/ServerRequestInterface.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="36">
+          <caret line="7" column="0" lean-forward="false" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/Framework/Http/Response.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="867">
-          <caret line="91" column="20" lean-forward="false" selection-start-line="91" selection-start-column="20" selection-end-line="91" selection-end-column="20" />
+        <state relative-caret-position="504">
+          <caret line="33" column="4" lean-forward="true" selection-start-line="33" selection-start-column="4" selection-end-line="92" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Framework/Http/ResponseInterface.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="252">
+          <caret line="14" column="38" lean-forward="false" selection-start-line="14" selection-start-column="38" selection-end-line="14" selection-end-column="38" />
           <folding />
         </state>
       </provider>
