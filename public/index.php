@@ -5,17 +5,28 @@
  * Date: 06.02.18
  * Time: 14:32
  */
-use Framework\Http\Request;
+use Framework\Http\RequestFactory;
+use Framework\Http\Response;
+
 
 chdir(dirname(__DIR__)); // поднимаемся на уровень вверх
 require 'vendor/autoload.php';
 
-$request = (new Request())
-->withQueryParams($_GET)
-->withParsedBody($_POST);
+### Initialization
+$request = RequestFactory::fromGlobals();
 
+
+### Action
 $name = $request->getQueryParams()['name'] ?? 'Guest';
 
-header('X-Developer: KAA');
+$response = (new Response('Hello, ' .$name . '!'))
+    ->withHeader('X-Developer: KAA');
 
-echo 'Hello! '.$name.'!'.PHP_EOL;
+### Sending
+
+header('HTTP/1.0'. $response->getStatusCode(). '' . $response->getReasonPhrase());
+foreach ($response->getHeaders() as $name => $value) {
+    header($name . ':' . $value);
+}
+
+echo $response->getBody();
